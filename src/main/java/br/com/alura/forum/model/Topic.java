@@ -16,7 +16,7 @@ public class Topic {
     @Enumerated(EnumType.STRING)
     private StatusTopic status = StatusTopic.NAO_RESPONDIDO;
     @ManyToOne
-    private User author;
+    private Users author;
     @ManyToOne
     private Course course;
     @OneToMany(mappedBy = "topic")
@@ -55,7 +55,7 @@ public class Topic {
         return true;
     }
 
-    public User getAuthor() {
+    public Users getAuthor() {
         return author;
     }
 

@@ -13,7 +13,7 @@ public class Response {
     private Topic topic;
     private LocalDateTime dateCriation = LocalDateTime.now();
     @ManyToOne
-    private User author;
+    private Users author;
     private Boolean solution = false;
 
     @Override
@@ -61,7 +61,7 @@ public class Response {
         return topic;
     }
 
-    public User getAuthor() {
+    public Users getAuthor() {
         return author;
     }
 }
